@@ -1443,11 +1443,156 @@ animation: infiniterotation 3s linear infinite;
 /**** 支付页面结束 ****/ 
 
 
+/**** 文章详情开始 ****/ 
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.ad-banner-top {
+	margin: 15px 0;
+}
+.article-content {
+	width: 70%;
+	float: left;
+} 
+.article-bar {
+	width: 28.5%;
+	float: left;
+	padding-left: 15px;
+}
+.article-container .article-date {
+	color: #666;
+	display: inline-block;
+	padding: 15px 0;
+}
+.article-container p {
+	color: #666;
+	line-height: 25px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 9;
+	overflow: hidden;
+}
+.article-container .article-img {
+	width: 100%;
+	text-align: center;
+	margin: 15px 0;
+}
+.articleProduct {
+	padding-left: 16%;
+	margin: 15px 0;
+}
+.article-product {
+	background: #dedede;
+	width: 74%;
+	padding: 15px;
+}
+.article-product .product-img ,.article-product .product-detail {
+	float: left;
+}
+.product-img {
+	width: 54%;
+}
+.product-detail {
+	padding-left: 15px;
+	width: 42%;
+}
+.product-detail p {
+	color: #444;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.product-detail div>a {
+	background: #f54f38;
+}
+.product-detail div>span {
+	color: #f54f38;
+}
+.product-detail a>span {
+	color: #fff;
+}
+.product-detail>div {
+	padding-top: 35%;
+	position: relative;
+}
+.product-detail>div>a {
+	position: absolute;
+    padding: 8px 22px;
+    right: 0;
+    top: 65%;
+}
+.more-article {
+	margin-top: 40px;
+}
+.articleList {
+	margin-bottom: 40px;
+}
+.articleList .article-list {
+	float: left;
+    width: 31%;
+    padding-right: 15px;
+}
+.articleList .article-list a img {
+	width: 100%;
+}
+.more-article>h4 {
+	display: inline-block;
+	border-bottom: 3px solid #f9421e;
+	margin-bottom: 15px;
+}
+.article-bar .bar-product a>img {
+	width: 100%;
+}
+.article-bar .bar-product {
+	margin: 15px 0;
+}
+.bar-product .bar-list {
+	position: relative;
+	padding-bottom: 10px;
+}
+.bar-list .icon-cart-on,.bar-list .icon-arrowright,.bar-list .icon-kefu {
+	position: absolute;
+	right: 0;
+}
+.bar-up .bar-list:nth-of-type(2) {
+	
+}
+.bar-up {
+	padding: 15px 15px 0 15px;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 5px;
+}
+.bar-down {
+	padding: 0 15px 0 15px;
+}
+.bar-up h5 {
+	padding-bottom: 7px;
+}
+.bar-up .bar-list>span {
+	color: #f85131;
+}
+.bar-up .bar-list a>span {
+	color: #666;
+	top: 6px;
+}
+.bar-up .bar-list a>.icon-cart-on {
+	color: #f85131;
+}
+.bar-down i {
+	font-style: normal;
+}
+.bar-down .icon-shoucang1 {
+	color: #666;
+}
+.bar-down .icon-kefu i {
+	color: #666;
+}
+.bar-down .product-shoucang {
+	color: #f54f38;
+}
 
 
 
-
-
-
-
-
+/**** 文章详情结束 ****/ 
