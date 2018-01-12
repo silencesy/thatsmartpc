@@ -1,7 +1,4 @@
 $(function(){
-	$(".icon-shoucang1").click(function(){
-  		$(this).toggleClass("product-shoucang");
-	});
 
 	// 关闭对联广告
 	$('.couplet-close').on('click',function(){

@@ -1,7 +1,20 @@
 $(function(){
-	$(".icon-shoucang1").click(function(){
-  		$(this).toggleClass("product-shoucang");
-	});
+	
+	var productContainer = new Swiper('.product-container', {
+		slidesPerView: 3,
+		spaceBetween: 15,
+		slidesPerGroup: 1,
+		loop: true,
+		loopFillGroupWithBlank: true,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+    });
 
 	// 关闭对联广告
 	$('.couplet-close').on('click',function(){

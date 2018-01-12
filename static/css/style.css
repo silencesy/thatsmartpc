@@ -70,7 +70,7 @@ fieldset, img, input, button {
     outline-style: none;
 }
 
-ul, ol {
+ul,li, ol {
     list-style: none;
 }
 
@@ -109,7 +109,7 @@ table {
 }
 
 body {
-	background-color: #ededed;
+	// background-color: #ededed;
 }
 
 .banxin {
@@ -262,6 +262,7 @@ animation: infiniterotation 3s linear infinite;
 	height: 38px;
 	// background-color: #ededed;
 	border-bottom: 1px solid #dfdfdf;
+	background-color: #ededed;
 }
 
 .top_bar a {
@@ -294,7 +295,6 @@ animation: infiniterotation 3s linear infinite;
 
 .top_bar_content .user-info {
 	width: 820px;
-	background-color: #ededed;
 }
 
 .top_bar_content .user-info li {
@@ -1447,6 +1447,7 @@ animation: infiniterotation 3s linear infinite;
 .container {
 	width: 1000px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 .ad-banner-top {
 	margin: 15px 0;
@@ -1459,6 +1460,9 @@ animation: infiniterotation 3s linear infinite;
 	width: 28.5%;
 	float: left;
 	padding-left: 15px;
+}
+.ad-bar img {
+	width: 100%;
 }
 .article-container .article-date {
 	color: #666;
@@ -1530,7 +1534,7 @@ animation: infiniterotation 3s linear infinite;
 	margin-bottom: 40px;
 }
 .articleList .article-list {
-	float: left;
+	float: left; 
     width: 31%;
     padding-right: 15px;
 }
@@ -1592,7 +1596,199 @@ animation: infiniterotation 3s linear infinite;
 .bar-down .product-shoucang {
 	color: #f54f38;
 }
-
-
+/*对联*/
+.couplet {
+    width: 100px;
+    position: fixed;
+    z-index: 100;
+} 
+.couplet-left {
+    border: 0px none;
+    width: auto;
+    max-height: 400px;
+    max-width: 100%;
+    top: 165px;
+}
+.couplet-right {
+    border: 0px none;
+    width: auto;
+    max-height: 400px;
+    max-width: 100%;
+    top: 494px;
+}
+.couplet-close {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    color: #fff;
+    line-height: 8px;
+    cursor: pointer;
+}
+.couplet-close:visited ,.couplet-close:hover ,.couplet-close:active{
+    color: #fff;
+}
+.couplet-left-close {
+    right: 0;
+}
+.couplet-right-close {
+    left: 0;
+}
 
 /**** 文章详情结束 ****/ 
+
+/**** 用户中心开始****/ 
+.ad-banner-bottom {
+	margin: 15px 0;
+}
+.ad-banner-bottom img {
+	width: 100%;
+}
+
+.userWrap {
+	width: 100%; 
+}
+.userTitle {
+	width: 22%;
+	float: left;
+}
+.userContent {
+	float: left;
+	width: 78%;
+	margin-bottom: 25px;
+}
+.userTitle a {
+	float: left;  
+	line-height: 40px; 
+	width: 200px;   
+	color: #222;
+}
+.userTitle a:hover, .userTitle a:active {
+	color: #f9421e; 
+}
+.user-info {
+	width: 100%;
+	padding-bottom: 30px;
+}
+.user-pay {
+	width: 50%;
+	float: left;
+	padding-top: 15px;
+}
+.user-edit {
+	width: 50%;
+	float: left;
+}
+.user-edit>p {
+	float: left;
+}
+.user-edit>p>span {
+	display: block;
+	padding-bottom: 10px;
+}
+.user-edit>p>a {
+	color: #666;
+}
+.user-edit>p>a:hover, .user-edit>p>a:active {
+	color: #f9421e;
+}
+.user-edit>p>a>span {
+	padding-left: 5px;
+}
+.user-touxiang {
+	float: left;
+	padding-right: 20px;
+	padding-left: 5px;
+}
+.user-pay >li {
+	float: left;
+    width: 20%;
+    text-align: center;
+}
+.user-pay >li>a {
+	color: #666;
+}
+.user-pay >li>a:hover {
+	color: #f9421e;
+}
+.user-pay >li:nth-of-type(1) {
+	padding-right: 28px;
+	border-right: 1px solid #666;
+}
+.user-pay >li:nth-of-type(2) {
+	padding-left: 20px;
+	padding-right: 16px;
+	border-right: 1px solid #666;
+}
+.user-pay >li:nth-of-type(3) {
+	padding-left: 30px;
+}
+.order-status>p {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e0e0e0;
+	padding-left: 10px;
+}
+.product-status {
+	padding: 15px 0;
+}
+.product-status>a {
+	display: inline-block;
+	float: left;
+	width: 18%;
+}
+.product-status .static-info {
+	float: left;
+	width: 80%;
+}
+.static-info> p:nth-of-type(1) {
+	padding-bottom: 30px;
+}
+.static-info> p:nth-of-type(2) >span {
+	padding-right: 20px;
+}
+.static-info> p:nth-of-type(2) >a {
+	display: inline-block;
+    padding: 5px 18px;
+    border: 1px solid #222;
+    border-radius: 15px;
+}
+.static-info> p:nth-of-type(2) >a:hover {
+	color: #f9421e;
+	border: 1px solid #f9421e;
+}
+.order-status .product-status:nth-of-type(1) {
+	border-bottom: 1px solid #e0e0e0;
+}
+.user-favourite {
+	padding: 15px 0;
+}
+.user-favourite>p {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.product-favourite {
+	padding: 15px 0;
+}
+.product-favourite> li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+.product-favourite> li> a >span {
+	display: inline-block;
+	padding-top: 10px;
+}
+.product-favourite> li> a >img {
+	height: 80px;
+}
+
+
+
+
+
+
+
+/**** 用户中心结束****/ 
