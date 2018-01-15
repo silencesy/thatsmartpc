@@ -1676,20 +1676,20 @@ animation: infiniterotation 3s linear infinite;
 	width: 50%;
 	float: left;
 }
-.user-edit>p {
+.user-edit >p {
 	float: left;
 }
-.user-edit>p>span {
+.user-edit >p >span {
 	display: block;
 	padding-bottom: 10px;
 }
-.user-edit>p>a {
+.user-edit >p >a {
 	color: #666;
 }
-.user-edit>p>a:hover, .user-edit>p>a:active {
+.user-edit >p >a:hover, .user-edit >p >a:active {
 	color: #f9421e;
 }
-.user-edit>p>a>span {
+.user-edit >p >a >span {
 	padding-left: 5px;
 }
 .user-touxiang {
@@ -1702,10 +1702,10 @@ animation: infiniterotation 3s linear infinite;
     width: 20%;
     text-align: center;
 }
-.user-pay >li>a {
+.user-pay >li >a {
 	color: #666;
 }
-.user-pay >li>a:hover {
+.user-pay >li >a:hover {
 	color: #f9421e;
 }
 .user-pay >li:nth-of-type(1) {
@@ -1720,7 +1720,7 @@ animation: infiniterotation 3s linear infinite;
 .user-pay >li:nth-of-type(3) {
 	padding-left: 30px;
 }
-.order-status>p {
+.order-status >p {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #e0e0e0;
 	padding-left: 10px;
@@ -1728,7 +1728,7 @@ animation: infiniterotation 3s linear infinite;
 .product-status {
 	padding: 15px 0;
 }
-.product-status>a {
+.product-status >a {
 	display: inline-block;
 	float: left;
 	width: 18%;
@@ -1737,19 +1737,19 @@ animation: infiniterotation 3s linear infinite;
 	float: left;
 	width: 80%;
 }
-.static-info> p:nth-of-type(1) {
+.static-info >p:nth-of-type(1) {
 	padding-bottom: 30px;
 }
-.static-info> p:nth-of-type(2) >span {
+.static-info >p:nth-of-type(2) >span {
 	padding-right: 20px;
 }
-.static-info> p:nth-of-type(2) >a {
+.static-info >p:nth-of-type(2) >a {
 	display: inline-block;
     padding: 5px 18px;
     border: 1px solid #222;
     border-radius: 15px;
 }
-.static-info> p:nth-of-type(2) >a:hover {
+.static-info >p:nth-of-type(2) >a:hover {
 	color: #f9421e;
 	border: 1px solid #f9421e;
 }
@@ -1759,7 +1759,7 @@ animation: infiniterotation 3s linear infinite;
 .user-favourite {
 	padding: 15px 0;
 }
-.user-favourite>p {
+.user-favourite >p {
     padding-bottom: 10px;
     border-bottom: 1px solid #e0e0e0;
     padding-left: 10px;
@@ -1768,16 +1768,16 @@ animation: infiniterotation 3s linear infinite;
 .product-favourite {
 	padding: 15px 0;
 }
-.product-favourite> li {
+.product-favourite >li {
 	float: left;
 	width: 20%;
 	text-align: center;
 }
-.product-favourite> li> a >span {
+.product-favourite >li >a >span {
 	display: inline-block;
 	padding-top: 10px;
 }
-.product-favourite> li> a >img {
+.product-favourite >li >a >img {
 	height: 80px;
 }
 .userName {
@@ -1798,7 +1798,7 @@ animation: infiniterotation 3s linear infinite;
 	float: left;
 	width: 45%;
 }
-.user-menu >p >a:nth-of-type(1)>span {
+.user-menu >p >a:nth-of-type(1) >span {
 	padding-left: 5px;
 }
 .user-menu >p >a:nth-of-type(2) {
@@ -1813,3 +1813,100 @@ animation: infiniterotation 3s linear infinite;
 }
 
 /**** 用户中心结束****/ 
+
+/**** 用户中心(订单详情)开始****/
+.progress-bar {
+	height: 30px;
+	background: #f9421e;
+	margin-bottom: 30px;
+}
+.received-tip {
+	padding: 15px 20px;
+	border: 1px solid #e0e0e0;
+}
+.received-tip >h4 {
+	margin-bottom: 7px;
+}
+.received-tip >h4 >p {
+	display: inline-block;
+}
+.received-tip >h4 >p:nth-of-type(1) >span {
+	color: #666;
+    padding: 0px 6px;
+    font-size: 12px;
+    border: 1px solid #666;
+    border-radius: 50px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+}
+.received-tip >h4 >p:nth-of-type(2) {
+	font-weight: 500;	
+	font-size: 20px;
+	vertical-align: top;
+	margin-left: 15px;
+}
+.received-tip >h4 >p >i {
+	font-style: normal;
+	color: #444;
+	font-size: 16px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.user-product {
+	margin-top: 15px;
+	margin-bottom:  30px; 
+}
+.user-product >h4 {
+	font-size: 17px;
+}
+.user-product >div.clearfix {
+	padding: 25px 20px;
+}
+.user-product .pro-left {
+	float: left;
+	width: 50%;
+}
+.user-product .pro-right {
+	float: right;
+	width: 50%;
+}
+.user-product .pro-left >div >div:nth-of-type(1) {
+	float: left;
+	width: 20%;
+}
+.user-product .pro-left >div >div:nth-of-type(2) {
+	float: left;
+	width: 80%;
+}
+.user-product .pro-left >div >div:nth-of-type(2) p:nth-of-type(2) {
+	float: left;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.user-product .pro-left i {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**** 用户中心(订单详情)结束****/
