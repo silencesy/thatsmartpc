@@ -204,12 +204,6 @@ body {
 	font-weight: 900;
 }
 
-.iconfont.icon-xiangshangjiantou-copy-copy-copy {
-	font-size: 30px;
-	color: #bfbfbf;
-	cursor: pointer;
-}
-
 .iconfont.icon-xiangshangjiantou-copy-copy-copy-copy {
 	font-size: 30px;
 	color: #bfbfbf;
@@ -283,7 +277,7 @@ animation: infiniterotation 3s linear infinite;
 }
 
 .top_bar_content .user_login li:nth-child(1) {
-	margin-left: 15px;
+	// margin-left: 15px;
 }
 
 .top_bar_content .user_login b {
@@ -1652,6 +1646,8 @@ animation: infiniterotation 3s linear infinite;
 .userTitle {
 	width: 22%;
 	float: left;
+	padding-left: 5px;
+    box-sizing: border-box;
 }
 .userContent {
 	float: left;
@@ -1667,7 +1663,7 @@ animation: infiniterotation 3s linear infinite;
 .userTitle a:hover, .userTitle a:active {
 	color: #f9421e; 
 }
-.user-info {
+.userInfo {
 	width: 100%;
 	padding-bottom: 30px;
 }
@@ -1784,11 +1780,36 @@ animation: infiniterotation 3s linear infinite;
 .product-favourite> li> a >img {
 	height: 80px;
 }
-
-
-
-
-
-
+.userName {
+	position: relative;
+}
+.userName .user-menu {
+    width: 65%;
+    background: #fff;
+    position: absolute;
+    top: 86%;
+    padding: 10px;
+}
+.user-menu >div {
+	float: left;
+	width: 55%;
+}
+.user-menu >p {
+	float: left;
+	width: 45%;
+}
+.user-menu >p >a:nth-of-type(1)>span {
+	padding-left: 5px;
+}
+.user-menu >p >a:nth-of-type(2) {
+	padding-top: 10px;
+    display: inline-block;
+}
+.user-menu {
+	display: none;
+}
+.userName:hover .user-menu {
+    display: block;
+}
 
 /**** 用户中心结束****/ 
