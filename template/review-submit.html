@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Thatsmart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../static/node_modules/swiper/dist/css/swiper.min.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_493593_0ac82o4yfdm18aor.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_493593_7dgl9yzcc0ltyb9.css">
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
@@ -96,69 +97,16 @@
                         <span>3</span>
                         Received
                     </div>
-                    <img src="../static/images/jindutiao-jiantou2.png" alt="">
-                    <div class="proBar4">
+                    <img src="../static/images/jindutiao-jiantou.png" alt="">
+                    <div>
                         <span>4</span>
                         Review
-                    </div>
-                    
+                    </div>                  
                 </div>
                 <!-- 进度条结束 -->
-                
-                <!-- Start received-tip -->
-                <div class="received-tip">
-                    <h4>
-                        <p><span>i</span>Received</p>
-                        <a href="" class="iconfont icon-kefu"><i>Live chat</i></a>
-                    </h4>
-                    <p>If you have any after-sale requests, please contact the customer services within 7 days from the date you received the parcel, late request will not be accepted, thank you.</p>
-                </div>
-                <!-- End received-tip -->
-
-                <!-- Start order-info -->
-                <div class="order-info">
-                    <h4>Order information</h4>
-                    <div class="clearfix">
-                        <div class="pro-left">
-                            <div class="clearfix">
-                                <div>
-                                    <i>Name :</i>
-                                    <i>Address :</i>
-                                </div>
-                                <div>
-                                    <p>AmandBao</p>
-                                    <p>Room 305 Qinzhou Building,NO.6,Lane 108,Qinzhou Road,Xuhui District,Shanghai</p>
-                                </div>                                
-                            </div>
-                            <div>
-                                <p><i>Order Number :</i> 20171110254624189</p>
-                                <p><i>Payment Time :</i> 2017-11-10 12:00:11</p>
-                                <p><i>Delivery Time :</i> 2017-11-14 10:12:10</p>
-                            </div>
-                        </div>
-                        <div class="pro-right">
-                            <h4 class="iconfont icon-right-1">
-                                <span>Order status: Trade successfully</span>
-                            </h4>
-                            <div class="right-shipping">
-                                <p>Shipping : BaishiXXX</p>
-                                <p>Order Number :  20171110254944521</p>
-                            </div>
-                            <div class="right-date">
-                                <span>2017-11-12 12:14:00</span>
-                                <span>[Received]</span>
-                            </div>
-                            <p>
-                                <a href="">Review</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End order-info -->
-
-                <!-- Start user-product -->
-                <div class="user-product">
-                    <div class="pro-item">
+                <!-- Start review-submit -->
+                <div class="review-product review-submit">
+                    <div class="pro-title">
                         <p>
                             <span>Item</span>
                         </p>
@@ -167,9 +115,10 @@
                         <span>Subtotal</span>
                         <span>Status</span>
                     </div>
-                    <div class="pro-content">
+                    <div class="pro-container reviewed">
                         <p>
                             <img src="../static/images/pro-img.png" alt="">
+                            <a href="" class="iconfont icon-kefu"> <i>Live chat</i></a>
                             <span>Order number : 2017121245326</span>
                         </p>
                         <div>
@@ -180,20 +129,34 @@
                                 <span>Size : L</span>
                             </p>
                             <div>
-                                <span>¥ 999</span>
+                                <span class="pro-price">¥ 999</span>
                                 <span>1</span>
                                 <span>¥ 999</span>
-                                <span>Received</span>
+                                <p>Received</p>
                             </div>
                         </div>
                     </div>
-                    <div class="order-price">
-                        <p>Total amount: ¥ 999</p>
-                        <p>Shipping : ¥ 0.00</p>
-                        <p>Total: ¥<i> 999</i></p>
-                    </div>
+                    <form action="" class="form-review">
+                        <h4>Review</h4>
+                        <div class="review-text">
+                            <textarea name="" id="" placeholder="Enter here"></textarea> 
+                            <i>0/500</i> 
+                        </div>
+                        <div class="take-photo clearfix">
+                            <div>
+                                <img src="../static/images/user_img06.jpg" alt="">
+                            </div>
+                            <div class="addPhoto">
+                                <span class="iconfont icon-camera2"></span>
+                                <p>Add photo</p>
+                            </div>
+                        </div>
+                        <div class="review-input">
+                            <input type="submit" class="reviewSubmit" id="" name="" value="Submit">
+                        </div>
+                    </form>
                 </div>
-                <!-- End user-product -->
+                <!-- Start review-submit -->
             </div>
             <!-- 用户中心(订单详情)结束 -->
 
@@ -299,7 +262,7 @@
         <!-- 底部栏结束 -->
     </div>
     <script src="../static/node_modules/jquery/dist/jquery.min.js"></script>
-     <script src="../static/node_modules/swiper/dist/js/swiper.min.js"></script>
-    <script src="../api/orderDetail.js"></script>
+    <script src="../static/node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="../api/review-submit.js"></script>
 </body>
 </html>
