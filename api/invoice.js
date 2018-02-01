@@ -16,6 +16,20 @@ $(function(){
 		},
     });
 
+	$('.cli').click(function () {
+		var cliShow = $(this).find('i').prop('class');
+		var needShow = $('.pro-container');
+		$(this).addClass('reviewActive ').siblings().removeClass('reviewActive ')
+		$.each(needShow,function(index,item) {
+			if($(item).hasClass(cliShow)){
+				$(this).addClass('isShow').removeClass('isHide');
+			}else if(cliShow == 'All'){
+				$(item).addClass('isShow').removeClass('isHide');
+			}else{
+				$(item).addClass('isHide').removeClass('isShow');
+			}
+		})
+	});
 
 	// 关闭对联广告
 	$('.couplet-close').on('click',function(){

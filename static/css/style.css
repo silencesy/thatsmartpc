@@ -61,7 +61,6 @@ em ,i {
 .clearfix {
 	zoom: 1;
 }
-
 /*各浏览器显示不同，去掉边框等默认样式*/
 fieldset, img, input, button {
     border: none;
@@ -81,6 +80,10 @@ ul,li, ol {
 
 .fr {
     float: right;
+}
+
+.bg-f {
+	background: #fff;
 }
 
 input {
@@ -109,7 +112,7 @@ table {
 }
 
 body {
-	// background-color: #ededed;
+	background-color: #ededed;
 }
 
 .banxin {
@@ -1438,6 +1441,10 @@ animation: infiniterotation 3s linear infinite;
 
 
 /**** 文章详情开始 ****/ 
+.article-content .articles {
+	padding: 15px 15px 20px 15px;
+	box-sizing: border-box;
+}
 .container {
 	width: 1000px;
 	margin: 0 auto;
@@ -1447,11 +1454,11 @@ animation: infiniterotation 3s linear infinite;
 	margin: 15px 0;
 }
 .article-content {
-	width: 70%;
+	width: 70.5%;
 	float: left;
 } 
 .article-bar {
-	width: 28.5%;
+	width: 28%;
 	float: left;
 	padding-left: 15px;
 }
@@ -1461,7 +1468,7 @@ animation: infiniterotation 3s linear infinite;
 .article-container .article-date {
 	color: #666;
 	display: inline-block;
-	padding: 15px 0;
+	padding: 15px 0 10px 0;
 }
 .article-container p {
 	color: #666;
@@ -1481,7 +1488,7 @@ animation: infiniterotation 3s linear infinite;
 	margin: 15px 0;
 }
 .article-product {
-	background: #dedede;
+	background: #f2f2f2;
 	width: 74%;
 	padding: 15px;
 }
@@ -1502,45 +1509,58 @@ animation: infiniterotation 3s linear infinite;
 	-webkit-line-clamp: 3;
 	overflow: hidden;
 }
-.product-detail div>a {
+.product-detail div > a {
 	background: #f54f38;
 }
-.product-detail div>span {
+.product-detail div > span {
 	color: #f54f38;
 }
-.product-detail a>span {
+.product-detail a > span {
 	color: #fff;
 }
-.product-detail>div {
+.product-detail > div {
 	padding-top: 35%;
 	position: relative;
 }
-.product-detail>div>a {
+.product-detail > div > a {
 	position: absolute;
     padding: 8px 22px;
     right: 0;
     top: 65%;
 }
 .more-article {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .articleList {
 	margin-bottom: 40px;
 }
 .articleList .article-list {
 	float: left; 
-    width: 31%;
-    padding-right: 15px;
+    width: 31.8%;
+    margin-right: 15px;
+}
+.articleList .article-list:last-child {
+	margin-right: 0;
+}
+.articleList .article-list a {
+	display: inline-block;
+}
+.articleList .article-list a > div {
+	padding: 15px;
+}
+.articleList .article-list a > div > h4 {
+	padding-bottom: 10px;
 }
 .articleList .article-list a img {
 	width: 100%;
 }
-.more-article>h4 {
+.more-article > h4 {
 	display: inline-block;
 	border-bottom: 3px solid #f9421e;
 	margin-bottom: 15px;
+	padding-bottom: 3px;
 }
-.article-bar .bar-product a>img {
+.article-bar .bar-product a > img {
 	width: 100%;
 }
 .article-bar .bar-product {
@@ -1568,15 +1588,16 @@ animation: infiniterotation 3s linear infinite;
 .bar-up h5 {
 	padding-bottom: 7px;
 }
-.bar-up .bar-list>span {
+.bar-up .bar-list > span {
 	color: #f85131;
 }
-.bar-up .bar-list a>span {
+.bar-up .bar-list a > span {
 	color: #666;
 	top: 6px;
 }
-.bar-up .bar-list a>.icon-cart-on {
+.bar-up .bar-list a > .icon-cart-on {
 	color: #f85131;
+	margin-right: 0;
 }
 .bar-down i {
 	font-style: normal;
@@ -1601,7 +1622,7 @@ animation: infiniterotation 3s linear infinite;
     width: auto;
     max-height: 400px;
     max-width: 100%;
-    top: 165px;
+    top: 205px;
 }
 .couplet-right {
     border: 0px none;
@@ -1639,25 +1660,31 @@ animation: infiniterotation 3s linear infinite;
 .ad-banner-bottom img {
 	width: 100%;
 }
-
 .userWrap {
 	width: 100%; 
 }
 .userTitle {
-	width: 22%;
+	width: 18%;
 	float: left;
-	padding-left: 5px;
+	padding: 25px 0 5px 15px;
     box-sizing: border-box;
+    background: #fff;
+    margin-right: 15px;
+}
+.userWrap .order-status {
+	background: #fff;
+	margin-bottom: 15px;
 }
 .userContent {
 	float: left;
-	width: 78%;
-	margin-bottom: 25px;
+	width: 80.5%;
+	margin-bottom: 5px;
+    box-sizing: border-box;
 }
 .userTitle a {
 	float: left;  
-	line-height: 40px; 
-	width: 200px;   
+	padding-bottom: 20px; 
+	width: 100%;   
 	color: #222;
 }
 .userTitle a:hover, .userTitle a:active {
@@ -1665,7 +1692,10 @@ animation: infiniterotation 3s linear infinite;
 }
 .userInfo {
 	width: 100%;
-	padding-bottom: 30px;
+	padding: 15px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-sizing: border-box;
 }
 .user-pay {
 	width: 50%;
@@ -1676,20 +1706,20 @@ animation: infiniterotation 3s linear infinite;
 	width: 50%;
 	float: left;
 }
-.user-edit >p {
+.user-edit > p {
 	float: left;
 }
-.user-edit >p >span {
+.user-edit > p > span {
 	display: block;
 	padding-bottom: 10px;
 }
-.user-edit >p >a {
+.user-edit > p > a {
 	color: #666;
 }
-.user-edit >p >a:hover, .user-edit >p >a:active {
+.user-edit > p > a:hover, .user-edit > p > a:active {
 	color: #f9421e;
 }
-.user-edit >p >a >span {
+.user-edit > p > a > span {
 	padding-left: 5px;
 }
 .user-touxiang {
@@ -1697,38 +1727,39 @@ animation: infiniterotation 3s linear infinite;
 	padding-right: 20px;
 	padding-left: 5px;
 }
-.user-pay >li {
+.user-pay > li {
 	float: left;
     width: 20%;
     text-align: center;
+    position: relative;
 }
-.user-pay >li >a {
+.user-pay > li > a {
 	color: #666;
 }
-.user-pay >li >a:hover ,.user-pay >li >a:active {
+.user-pay > li > a:hover ,.user-pay > li > a:active {
 	color: #f9421e;
 }
-.user-pay >li:nth-of-type(1) {
+.user-pay > li:nth-of-type(1) {
 	padding-right: 28px;
 	border-right: 1px solid #666;
 }
-.user-pay >li:nth-of-type(2) {
+.user-pay > li:nth-of-type(2) {
 	padding-left: 20px;
 	padding-right: 16px;
 	border-right: 1px solid #666;
 }
-.user-pay >li:nth-of-type(3) {
+.user-pay > li:nth-of-type(3) {
 	padding-left: 30px;
 }
-.order-status >p {
-	padding-bottom: 10px;
+.order-status > p {
 	border-bottom: 1px solid #e0e0e0;
-	padding-left: 10px;
+	padding: 15px;
 }
 .product-status {
 	padding: 15px 0;
+	margin: 0 15px;
 }
-.product-status >a {
+.product-status > a {
 	display: inline-block;
 	float: left;
 	width: 18%;
@@ -1737,19 +1768,19 @@ animation: infiniterotation 3s linear infinite;
 	float: left;
 	width: 80%;
 }
-.static-info >p:nth-of-type(1) {
+.static-info > p:nth-of-type(1) {
 	padding-bottom: 30px;
 }
-.static-info >p:nth-of-type(2) >span {
+.static-info > p:nth-of-type(2) > span {
 	padding-right: 20px;
 }
-.static-info >p:nth-of-type(2) >a {
+.static-info > p:nth-of-type(2) > a {
 	display: inline-block;
     padding: 5px 18px;
     border: 1px solid #222;
     border-radius: 15px;
 }
-.static-info >p:nth-of-type(2) >a:hover ,.static-info >p:nth-of-type(2) >a:active {
+.static-info > p:nth-of-type(2) > a:hover ,.static-info > p:nth-of-type(2) > a:active {
 	color: #f9421e;
 	border: 1px solid #f9421e;
 }
@@ -1757,27 +1788,26 @@ animation: infiniterotation 3s linear infinite;
 	border-bottom: 1px solid #e0e0e0;
 }
 .user-favourite {
-	padding: 15px 0;
+	padding-bottom: 15px;
+	background: #fff;
 }
-.user-favourite >p {
-    padding-bottom: 10px;
+.user-favourite > p {
+    padding: 15px;
     border-bottom: 1px solid #e0e0e0;
-    padding-left: 10px;
-    padding-top: 10px;
 }
 .product-favourite {
 	padding: 15px 0;
 }
-.product-favourite >li {
+.product-favourite > li {
 	float: left;
 	width: 20%;
 	text-align: center;
 }
-.product-favourite >li >a >span {
+.product-favourite > li > a > span {
 	display: inline-block;
 	padding-top: 10px;
 }
-.product-favourite >li >a >img {
+.product-favourite > li > a > img {
 	height: 80px;
 }
 .userName {
@@ -1790,18 +1820,18 @@ animation: infiniterotation 3s linear infinite;
     top: 86%;
     padding: 10px;
 }
-.user-menu >div {
+.user-menu > div {
 	float: left;
 	width: 55%;
 }
-.user-menu >p {
+.user-menu > p {
 	float: left;
 	width: 45%;
 }
-.user-menu >p >a:nth-of-type(1) >span {
+.user-menu > p > a:nth-of-type(1) > span {
 	padding-left: 5px;
 }
-.user-menu >p >a:nth-of-type(2) {
+.user-menu > p > a:nth-of-type(2) {
 	padding-top: 10px;
     display: inline-block;
 }
@@ -1814,6 +1844,15 @@ animation: infiniterotation 3s linear infinite;
 .userName:active .user-menu {
     display: block;
 }
+.numberTips {
+	background: #f9421e;
+	color: #fff;
+	border: 1px solid #f9421e;
+	font-size: 12px;
+	border-radius: 12px;
+	position: absolute;
+	top: -8px;
+}
 /**** 用户中心结束****/ 
 
 /**** 用户中心(订单详情)开始****/
@@ -1824,14 +1863,14 @@ animation: infiniterotation 3s linear infinite;
 	line-height: 30px;
 	position: relative;
 }
-.progress-bar >div {
+.progress-bar > div {
 	float: left;
 	text-align: center;
 	width: 25%;
 	color: #fff;
 	box-sizing: border-box;
 }
-.progress-bar >div >span {
+.progress-bar > div > span {
 	font-size: 10px;
     padding: 0px 5px;
     border: 1px solid #fff;
@@ -1841,11 +1880,11 @@ animation: infiniterotation 3s linear infinite;
     vertical-align: top;
     margin-right: 5px;
 }
-.progress-bar >.proBar4 {
+.progress-bar > .proBar4 {
  	background: #c7c7c7;
  	color: #444;
 }
-.progress-bar >.proBar4 >span {
+.progress-bar > .proBar4 > span {
  	background: #636363;
  	color: #fff;
  	border: 1px solid #636363;
@@ -1857,23 +1896,23 @@ animation: infiniterotation 3s linear infinite;
 //     border-bottom: 15px solid transparent;
 //     border-left: 15px solid pink;
 // }
-.progress-bar >img {
+.progress-bar > img {
 	position: absolute;
 }
-
-
-
 .received-tip {
-	padding: 15px 20px;
 	border: 1px solid #e0e0e0;
+	padding: 15px;
 }
-.received-tip >h4 {
+.received-tip > h4 {
 	margin-bottom: 7px;
 }
-.received-tip >h4 >p {
+.received-tip > p {
+	font-size: 14px;
+}
+.received-tip > h4 > p {
 	display: inline-block;
 }
-.received-tip >h4 >p:nth-of-type(1) >span {
+.received-tip > h4 > p:nth-of-type(1) > span {
 	color: #666;
     padding: 0px 6px;
     font-size: 12px;
@@ -1884,14 +1923,14 @@ animation: infiniterotation 3s linear infinite;
     vertical-align: top;
     margin-top: 2px;
 }
-.received-tip >h4 >a {
+.received-tip > h4 > a {
 	display: inline-block;
 	font-weight: 500;	
 	font-size: 20px;
 	vertical-align: top;
 	margin-left: 15px;
 }
-.received-tip >h4 >a >i {
+.received-tip > h4 > a > i {
 	font-style: normal;
 	color: #444;
 	font-size: 16px;
@@ -1900,14 +1939,16 @@ animation: infiniterotation 3s linear infinite;
 }
 
 .order-info {
-	margin-top: 15px;
-	margin-bottom:  30px; 
+	margin-top: 10px;
+	margin-bottom: 30px; 
 }
-.order-info >h4 {
-	font-size: 17px;
+.order-info > h4 {
+	font-size: 16px;
+	margin-bottom: 10px;
 }
-.order-info >div.clearfix {
-	padding: 25px 20px;
+.order-info > div.clearfix {
+	padding: 25px 20px 20px 20px;
+	background: #f2f2f2;
 }
 .order-info .pro-left {
 	float: left;
@@ -1921,15 +1962,15 @@ animation: infiniterotation 3s linear infinite;
 	box-sizing: border-box;
 	padding: 0 30px 0 34px;
 }
-.order-info .pro-left >div >div:nth-of-type(1) {
+.order-info .pro-left > div > div:nth-of-type(1) {
 	float: left;
 	width: 20%;
 }
-.order-info .pro-left >div >div:nth-of-type(2) {
+.order-info .pro-left > div > div:nth-of-type(2) {
 	float: left;
 	width: 80%;
 }
-.order-info .pro-left >div >div:nth-of-type(2) p:nth-of-type(2) {
+.order-info .pro-left > div > div:nth-of-type(2) p:nth-of-type(2) {
 	float: left;
 	margin-top: 10px;
     margin-bottom: 10px;
@@ -1937,17 +1978,17 @@ animation: infiniterotation 3s linear infinite;
 .order-info .pro-left i {
 	font-style: normal;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 14px;
 	display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
-.order-info .pro-right >h4 {
+.order-info .pro-right > h4 {
 	font-size: 29px;
     color: #f9421e;
     font-weight: 500;
 }
-.order-info .pro-right >h4 >span {
-	font-size: 20px;
+.order-info .pro-right > h4 > span {
+	font-size: 18px;
 	color: #444;
 	font-weight: 600;
 	vertical-align: top;
@@ -1956,40 +1997,46 @@ animation: infiniterotation 3s linear infinite;
 }
 .pro-right .right-shipping {
 	text-align: center;
-	padding-right: 111px;
+	padding-right: 55px;
 }
-.right-shipping >p:nth-of-type(1) {
-	padding-right: 40px;
-	margin: 10px 0;
+.right-shipping > p:nth-of-type(1) {
+	padding-right: 35px;
+	margin: 5px 0;
+}
+.right-shipping > p {
+	font-size: 14px;
 }
 .right-date {
 	text-align: right;
 	margin-top: 10px;
 	margin-bottom: 20px;
-	padding-right: 37px;
+	padding-right: 30px;
 }
-.right-date >span:nth-of-type(1) {
+.right-date > span:nth-of-type(1) {
 	color: #666;
+	font-size: 14px;
 }
-.right-date >span:nth-of-type(2) {
+.right-date > span:nth-of-type(2) {
 	color: #f9421e;
+	font-size: 14px;
 }
-.pro-right >p >a {
+.pro-right > p > a {
     display: inline-block;
     padding: 2px 18px;
     color: #f9421e;
     border: 1px solid #f9421e;
     border-radius: 15px;
-    margin-left: 140px;
+    margin-left: 160px;
+    font-size: 14px;
  }
-.pro-item >p {
+.pro-item > p {
 	display: inline-block;
     width: 40%;
     text-align: center;
     font-weight: 600;
 }
-.pro-item >span {
-	padding-right: 85px;
+.pro-item > span {
+	padding-right: 84px;
 	font-weight: 600;
 }
 .pro-item {
@@ -1999,134 +2046,169 @@ animation: infiniterotation 3s linear infinite;
 	border: 1px solid #e0e0e0;
 	padding: 10px 20px;
 }
-.pro-content >p:nth-of-type(1) >img {
+.pro-content > p:nth-of-type(1) > img {
 	padding-right: 27%;
 	width: 120px;
     height: 20px;
 }
-.pro-content >p:nth-of-type(1) >span {
+.pro-content > p:nth-of-type(1) > span {
 	color: #666;
 }
-.pro-content >div {
+.pro-content > div {
 	padding: 15px 0 10px 0;
 }
-.pro-content >div >img {
+.pro-content > div > img {
 	width: 110px;
 	vertical-align: top;
 	padding-right: 10px;
 }
-.pro-content >div >p {
+.pro-content > div > p {
 	display: inline-block;
 	width: 220px;
 }
-.pro-content >div >p >span {
+.pro-content > div > p > span {
 	display: block;
 	padding-bottom: 4px;
 	color: #666;
+	font-size: 14px;
 }
-.pro-content >div >p >span:nth-of-type(1) {
+.pro-content > div > p > span:nth-of-type(1) {
 	color: #444;
 	overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-size: 14px;
 }
-.pro-content >div >div {
+.pro-content > div > div {
 	display: inline-block;
     vertical-align: top;
     padding-left: 37px;
     padding-top: 25px;
 }
-.pro-content >div >div >span {
+.pro-content > div > div > span {
 	padding-right: 112px;
 	color: #666;
 }
-.pro-content >div >div >span:last-child {
+.pro-content > div > div > span:last-child {
 	padding-right: 0;
 	color: #444;
 }
-.pro-content >div >div >span:nth-of-type(2) {
+.pro-content > div > div > span:nth-of-type(2) {
 	padding-right: 126px;
 }
-.pro-content >div >div >span:nth-of-type(3) {
+.pro-content > div > div > span:nth-of-type(3) {
 	padding-right: 91px;
 	color: #444;
 }
 .order-price {
-	margin: 20px 0;
-	padding-right: 20px;
+	margin-top: 15px;
+	padding-right: 15px;
 	text-align: right;
 }
-.order-price >p {
+.order-price > p {
 	padding-bottom: 10px;
+	font-size: 14px;
 }
-.order-price >p >i {
+.order-price > p:last-child {
+	padding-bottom: 0;
+}
+.order-price > p > i {
 	font-style: normal;
 	color: #f9421e;
 }
-
-
+.userCenter {
+	padding: 15px;
+}
+.user-product .pro-item > p {
+    display: inline-block;
+    width: 41.5%;
+}
+.user-product .pro-item {
+	background: #f2f2f2;
+	margin-bottom: 15px;
+}
+.order-info .pro-left > div > div:nth-of-type(2) p {
+	font-size: 14px;
+	margin-top: 4px;
+}
+.userCenter.bg-f .order-info {
+	margin-bottom: 15px;	
+}
+.user-product .pro-item {
+	padding: 10px 0;
+}
+.user-product .pro-item > span:last-child {
+	padding-right: 0;
+}
 /**** 用户中心(订单详情)结束***/
 
 /**** 没有地址开始***/
-.noAdd {
-	height: 300px;
-	line-height: 300px;
+.userContent.noAdd {
+	height: 358px;
+	line-height: 358px;
 	text-align: center;
+	background: #fff;
 }
-.noAdd >a {
+.noAdd > a {
 	color: #f9421e;
 	border: 1px solid #f9421e;
 	border-radius: 15px;
 	padding: 4px 15px;
 }
-
 /**** 没有地址结束***/
 
 /**** 评论开始***/
+.userContent.userReviews {
+	background: #fff;
+	padding: 15px 15px 0 15px;
+	margin-bottom: 0;
+}
 .review-select {
 	width: 100%;
 }
-.review-select >div:nth-of-type(1) {
+.review-select > div:nth-of-type(1) {
 	float: left;
 	width: 63%;
+	padding-top: 3px;
+	position: relative;
 }
-.review-select >div:nth-of-type(2) {
-	float: left;
-	width: 37%;
+.review-select > div:nth-of-type(2) {
+	float: right;
 }
-.review-select >div:nth-of-type(1) >span:nth-of-type(1) {
-	margin-right: 20px;
+.review-select > div:nth-of-type(1) > span:nth-of-type(1) {
+	margin-right: 28px;
 }
-.review-select >div:nth-of-type(1) >span:nth-of-type(2) {
-	margin: 0 20px;
+.review-select > div:nth-of-type(1) > span:nth-of-type(2) {
+	margin: 0 27px;
 }
-.review-select >div:nth-of-type(1) >span:nth-of-type(3) {
+.review-select > div:nth-of-type(1) > span:nth-of-type(3) {
 	margin-left: 20px;
 	margin-right: 20px;
 }
-.review-select >div:nth-of-type(1) >span:nth-of-type(4) {
+.review-select > div:nth-of-type(1) > span:nth-of-type(4) {
 	margin-left: 20px;
 }
-.review-select >div:nth-of-type(1) >i {
+.review-select > div:nth-of-type(1) > i {
 	font-size: 10px;
     color: #e0e0e0;
     border-right: 1px solid #e0e0e0;
 }
-.review-select >div:nth-of-type(1) >span {
-	padding: 0 5px 3px 5px;
+.review-select > div:nth-of-type(1) > span {
+	padding: 0 9px 6px 9px;
 	cursor: pointer;
 }
 .search-product {
 	position: relative;
 }
 .search-product  input {
-	width: 262px;
+	width: 260px;
     height: 25px;
     border: 1px solid #dfdfdf;
     border-radius: 30px;
-    padding-left: 10px;
+    padding-left: 13px;
+    font-size: 14px;
 }
 .search-product .icon-sousuo {
     position: absolute;
@@ -2137,108 +2219,122 @@ animation: infiniterotation 3s linear infinite;
 }
 .review-product {
 	width: 100%;
+	background: #fff;
 }
 .review-product .pro-title {
 	width: 100%;
-	margin: 25px 0;
+    margin: 15px 0;
+    background: #f2f2f2;
+    padding: 10px 0;
 }
-.review-product .pro-title >p {
+.review-product .pro-title > p {
 	width: 45%;
 	display: inline-block;
-	text-align: center;
 }
-.review-product .pro-title >span {
-	padding-right: 5%;
+.review-product .pro-title > p > span {
+	padding-left: 133px;
+}
+.review-product .pro-title > span {
+	padding-right: 4.7%;
+}
+.review-product .pro-title > span:nth-of-type(3) {
+    padding-right: 7%;
 }
 .review-product .pro-container {
 	border: 1px solid #e0e0e0;
-	padding: 10px 20px;
-	margin-right: 15px;
+	padding: 0 0 20px 0;
 	margin-bottom: 15px;
 }
-.review-product .pro-container >p {
+.review-product .pro-container > p {
 	position: relative;
+	background: #f2f2f2;
+	padding: 10px 15px;
 }
-.review-product .pro-container >p >b {
+.review-product .pro-container > p > b {
 	position: absolute;
 	right: 0;
 }
-.review-product .pro-container >p >img {
-	padding-right: 8%;
-    width: 120px;
+.review-product .pro-container > p > img {
+	padding-right: 50px;
+    width: 105px;
+    margin-top: -2px;
 }
-.review-product .pro-container >p >a {
+.review-product .pro-container > p > a {
 	padding-right: 7%;
 	font-weight: 600;
 }
-.review-product .pro-container >p >a >i {
+.review-product .pro-container > p > a > i {
 	color: #444;
+	font-size: 14px;
 }
-.review-product .pro-container >p >span {
+.review-product .pro-container > p > span {
 	color: #666;
+	font-size: 14px;
 }
-.review-product .pro-container >p >b {
+.review-product .pro-container > p > b {
 	color: #f9421e;
-	padding-left: 8%;
+	padding-right: 15px;
 }
-.pro-container >div {
+.pro-container > div {
 	padding: 15px 0 10px 0;
 }
-.pro-container >div >img {
+.pro-container > div > img {
 	width: 95px;
 	vertical-align: top;
 	padding-right: 10px;
 }
-.pro-container >div >p {
+.pro-container > div > p {
 	display: inline-block;
-	width: 200px;
+	width: 160px;
 }
-.pro-container >div >p >span {
+.pro-container > div > p > span {
 	display: block;
 	padding-bottom: 4px;
 	color: #666;
+	font-size: 14px;
 }
-.pro-container >div >p >span:nth-of-type(1) {
+.pro-container > div > p > span:nth-of-type(1) {
 	color: #444;
 	overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-size: 14px;
 }
-.pro-container >div >div {
+.pro-container > div > div {
 	width: 385px;
 	display: inline-block;
     vertical-align: top;
-    padding-left: 20px;
+    padding-left: 74px;
     padding-top: 25px;
     position: relative;
 }
-.pro-container >div >div >span {
+.pro-container > div > div > span {
 	padding-right: 56px;
     color: #666;
     display: inline-block;
     vertical-align: top;
 }
-.pro-container >div >div >span:nth-of-type(1) {
+.pro-container > div > div > span:nth-of-type(1) {
 	padding-top: 11px;
 }
-.pro-container >div >div >s {
+.pro-container > div > div > s {
     position: absolute;
     top: 13px;
-    left: 15px;
+    left: 70px;
     color: #999;
 }
-.pro-container >div >div >i {
+.pro-container > div > div > i {
 	position: absolute;
     bottom: 1px;
-    right: 30%;
+    right: 26%;
     font-size: 14px;
 }
-.pro-container >div >div >.shipping-span {
+.pro-container > div > div > .shipping-span {
 	margin-top: -10px;
 }
-.pro-container >div >div >span:last-child {
+.pro-container > div > div > span:last-child {
 	padding-right: 0;
     color: #444;
     border: 1px solid #444;
@@ -2248,63 +2344,56 @@ animation: infiniterotation 3s linear infinite;
     margin-top: -2px;
     margin-left: 10px;
 }
-.pro-container >div >div >span:nth-of-type(2) {
+.pro-container > div > div > span:nth-of-type(2) {
     padding-right: 75px;
     padding-left: 7px;
 }
-.pro-container >div >div >span:nth-of-type(3) {
-	padding-right: 35px;
+.pro-container > div > div > span:nth-of-type(3) {
+	padding-right: 43px;
     color: #444;
 }
-.pro-container >div >div >span:last-child:hover {
+.pro-container > div > div > span:last-child:hover {
 	color: #f9421e;
 	border: 1px solid #f9421e;
 }
 .review-select .reviewActive {
 	color: #f9421e;
-	border-bottom: 1px solid #f9421e;	
+	border-bottom: 2px solid #f9421e;	
 }
 /**** 评论结束***/
 
 /**** 提交评论开始***/
-.review-submit .pro-container >p >img {
+.review-submit .pro-container > p > img {
 	padding-right: 5%;
 }
-.review-submit .pro-container >p >a {
+.review-submit .pro-container > p > a {
 	padding-right: 17%;
 }
-.review-submit .pro-title >span {
+.review-submit .pro-title > span {
 	padding-right: 7%;
 }
-.review-submit .pro-container >div >div >.pro-price {
+.review-submit .pro-container > div > div > .pro-price {
     padding-top: 0;
 }
-.review-submit .pro-container >div >div {
-	padding-left: 11%;
+.review-submit .pro-container > div > div {
+	padding-left: 17%;
 }
-.review-submit .pro-container >div >div >span:nth-of-type(2) {
-    padding-right: 28%;
-    padding-left: 11%;
+.review-submit .pro-container > div > div > span:nth-of-type(2) {
+    padding-right: 27%;
+    padding-left: 9%;
 }
-.pro-container >div >div >p {
+.review-submit .pro-container > div > div > p {
     padding-right: 0;
     color: #444;
     border-radius: 20px;
     padding: 2px 13px;
     position: absolute;
     margin-top: -2px;
-    margin-left: 6%;
+    margin-left: 4%;
     display: inline-block;
     vertical-align: top;
 }
-.review-submit .pro-container {
-	margin: 0 15px 15px 15px;
-}
-.form-review {
-	margin: 0 15px;
-	// position: relative;
-}
-.form-review >h4 {
+.form-review > h4 {
 	margin-bottom: 15px;
 }
 .form-review .review-text {
@@ -2322,7 +2411,7 @@ animation: infiniterotation 3s linear infinite;
    font-family: lcallig;
    font-size: 14px; 
 }
-.form-review .review-text >i {
+.form-review .review-text > i {
 	position: absolute;
     right: 10px;
     bottom: 10px;
@@ -2347,7 +2436,7 @@ animation: infiniterotation 3s linear infinite;
 	float: left;
 	margin-right: 10px;
 }
-.take-photo div:first-child >img {
+.take-photo div:first-child > img {
 	width: 105px;
 	max-height: 90px;
 }
@@ -2358,47 +2447,67 @@ animation: infiniterotation 3s linear infinite;
 	float: left;
 	text-align: center;
 }
-.addPhoto >span {
+.addPhoto > span {
 	font-size: 27px;
     color: #666;
     display: block;
     padding-top: 22%;
     padding-bottom: 5%;
 }
-.addPhoto >p {
+.addPhoto > p {
 	font-size: 14px;
 	color: #666;
 }
-
-
+.reviewCenter .progress-bar {
+	margin-bottom: 15px;
+}
+.review-product.review-submit {
+	padding: 15px;
+	box-sizing: border-box;
+}
+.userCenter.reviewCenter {
+	padding: 0;
+}
+.review-submit .pro-title {
+	margin-top: 0;
+}
+.review-product.review-submit .pro-container {
+	padding: 0 0 10px 0;
+}
 
 /**** 提交评论结束***/
 
-
-
 /**** 头像编辑开始***/
-.head-edit .edit-title >span {
+.userContent.head-edit {
+	background: #fff;
+	padding: 15px;
+}
+.head-edit .edit-title > span {
 	float: left;
 	border: 1px solid #444;
-	padding: 5px 20px;
-	margin-right: 20px;
+	padding: 3px 10px;
+	margin-right: 22px;
 	border-radius: 20px;
 }
-.head-edit .edit-title >span:hover {
+.head-edit .edit-title {
+	margin-left: 5px;
+}
+.head-edit .edit-title > span:hover {
 	border: 1px solid #f6442b;
 	color: #f6442b;	
 }
-.head-edit .edit-title >span:active {
+.head-edit .edit-title > span:active {
 	border: 1px solid #f6442b;
 	color: #f6442b;	
 }
-.head-edit >p {
+.head-edit > p {
 	margin: 15px 0;
 	color: #666;
+	font-size: 14px;
 }
 .add-touxiang {
 	background: #e0e0e0;
-    width: 63%;
+    width: 58%;
     height: 255px;
     position: relative;
     margin-bottom: 15px;
@@ -2411,9 +2520,9 @@ animation: infiniterotation 3s linear infinite;
     margin-top: -45px;
 	background: #fff;
 }
-.head-edit >button {
-    width: 110px;
-    height: 30px;
+.head-edit > button {
+    width: 140px;
+    height: 34px;
     background: #f6442b;
     color: #fff;
     font-size: 16px;
@@ -2422,20 +2531,22 @@ animation: infiniterotation 3s linear infinite;
 /**** 头像编辑结束***/
 
 /**** 订单开始***/
-.order-product .pro-container >p >span {
-    font-size: 13px;
-}
-.order-product .pro-container >p >b {
+.order-product .pro-container > p > b {
 	font-size: 14px;
 }
-.order-product .pro-container >div >div >span:last-child {
+.orderWrap .review-select > div:nth-of-type(1) > .numberTips {
+	font-weight: normal;
+	top: -5px;
+    right: 16%;
+}
+.order-product .pro-container > div > div > span:last-child {
     padding: 0;
     width: 85px;
     height: 25px;
     line-height: 25px;
     text-align: center;	
 }
-.pro-container >div >div >div {
+.pro-container > div > div > div {
 	width: 85px;
     right: 0;
     padding: 2px 13px;
@@ -2444,7 +2555,7 @@ animation: infiniterotation 3s linear infinite;
     margin-left: 10px;
     top: 3px;
 }
-.pro-container >div >div >div >span {
+.pro-container > div > div > div > span {
 	width: 85px;
     height: 25px;
     display: inline-block;
@@ -2453,9 +2564,16 @@ animation: infiniterotation 3s linear infinite;
     color: #444;
     border: 1px solid #444;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
-.pro-container >div >div >div >span:hover {
+.order-product .pro-container > div > div > div > span {
+    margin-bottom: 15px;
+}
+.order-product .pro-container > div > div > div {
+    top: 15px;
+    right: -8px;
+}
+.pro-container > div > div > div > span:hover {
 	color: #f6442b;
 	border: 1px solid #f6442b;
 }
@@ -2469,67 +2587,79 @@ animation: infiniterotation 3s linear infinite;
 
 
 /**** 发票开始***/
-.invoice-product .pro-title >span {
-    padding-right: 7%;
+.invoice-product .pro-title > span:nth-of-type(1) {
+    padding-right: 70px;
 }
-.invoice-product .pro-title >span:last-child {
+.invoice-product .pro-title > span:nth-of-type(2) {
+    padding-right: 82px;
+}
+.invoice-product .pro-title > span:last-child {
 	padding-right: 0;
 }
-.invoice-product .pro-container >div >div >span:nth-of-type(1) {
+.invoice-product .pro-container > div > div > span:nth-of-type(1) {
 	padding-top: 0;
 	padding-right: 0;
 }
-.invoice-product .pro-title >p {
-    width: 49%;
+.invoice-product .pro-title > p {
+    width: 45%;
 }
-.invoice-product .pro-container >div >div {
+.invoice-product .pro-container > div > div {
 	padding-left: 0;
 }
-.invoice-product .pro-container >p >a {
-	padding-right: 8%;
+.invoice-product .pro-container > p > a {
+	padding-right: 75px;
 }
-.invoice-product .pro-container >div >p {
-    width: 190px;
+.invoice-product .pro-container > div > p {
+    width: 160px;
 }
-.invoice-product .pro-container >div >div >span {
+.invoice-product .pro-container > div > div > span {
 	padding-left: 0;
     padding-right: 15px;
     font-size: 14px;
     margin-left: 0;
 }
-.invoice-product .pro-container >div >div >span:nth-of-type(2) {
-	padding-left: 33px;
-    padding-right: 15px;
+.invoice-product .pro-container > div > div > span:nth-of-type(2) {
+	padding-left: 43px;
+    padding-right: 34px;
 }
-.invoice-product .pro-container >div >div >span:nth-of-type(3) {
-	padding-right: 17px;
+.invoice-product .pro-container > div > div > span:nth-of-type(3) {
 	color: #666;
 }
 .invoice-product .pro-container {
-	padding: 15px 10px 20px 15px;
+	padding: 0 0 20px 0;
 }
-.invoice-product .pro-container >div >div {
+.invoice-product .pro-container > div > div {
     width: 430px;
 }
-.invoice-product .pro-container >div >div {
+.invoice-product .pro-container > div > div {
 	width: 415px;
 }
-.invoice-product .pro-container >div >div >div {
+.invoice-product .pro-container > div > div > div {
     width: 90px;
+    right: -50px;
+    top: 8px;
 }
-.invoice-product .pro-container >div >div >div >span {
+.invoice-product .noInvoice > div > div > div {
+	top: 23px;
+}
+.invoice-product .pro-container > div > div > div > span {
     width: 114px;
     font-size: 14px;
 }
-.invoice-product .pro-container >div >div >div >span:nth-of-type(2) {
+.invoice-product .pro-container > div > div > div > span:nth-of-type(2) {
 	border: none;
 }
 .yanse {
 	color: #f6442b !important;
 }
-.invoice-product .pro-container >div >div >div >.invalid-border {
+.invoice-product .pro-container > div > div > div > .invalid-border {
 	border: none;
 }
-
+.isShow{
+	display: block;
+}
+.isHide{
+	display: none;
+}
 
 /**** 发票结束***/
