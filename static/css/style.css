@@ -1993,6 +1993,9 @@ animation: infiniterotation 3s linear infinite;
 	display: inline-block;
     margin-bottom: 9px;
 }
+.order-info .pro-left p {
+	font-size: 14px;
+}
 .order-info .pro-right > h4 {
 	font-size: 29px;
     color: #f9421e;
@@ -2101,6 +2104,7 @@ animation: infiniterotation 3s linear infinite;
 .pro-content > div > div > span {
 	padding-right: 112px;
 	color: #666;
+	font-size: 14px;
 }
 .pro-content > div > div > span:last-child {
 	padding-right: 0;
@@ -2108,6 +2112,12 @@ animation: infiniterotation 3s linear infinite;
 }
 .pro-content > div > div > span:nth-of-type(2) {
 	padding-right: 126px;
+}
+.orderDetail .pro-content > div > div > span:nth-of-type(2) {
+    padding-right: 135px;
+}
+.orderDetail .pro-content > div > div > span:nth-of-type(3) {
+    padding-right: 97px;
 }
 .pro-content > div > div > span:nth-of-type(3) {
 	padding-right: 91px;
@@ -2284,7 +2294,7 @@ animation: infiniterotation 3s linear infinite;
 }
 .review-product .pro-container > p > b {
 	color: #f9421e;
-	padding-right: 15px;
+	padding-right: 14px;
 }
 .pro-container > div {
 	padding: 15px 0 10px 0;
@@ -2317,7 +2327,7 @@ animation: infiniterotation 3s linear infinite;
 	width: 385px;
 	display: inline-block;
     vertical-align: top;
-    padding-left: 74px;
+    padding-left: 77px;
     padding-top: 25px;
     position: relative;
 }
@@ -2326,6 +2336,7 @@ animation: infiniterotation 3s linear infinite;
     color: #666;
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
 }
 .pro-container > div > div > span:nth-of-type(1) {
 	padding-top: 11px;
@@ -2333,8 +2344,9 @@ animation: infiniterotation 3s linear infinite;
 .pro-container > div > div > s {
     position: absolute;
     top: 13px;
-    left: 70px;
+    left: 73px;
     color: #999;
+    font-size: 14px;
 }
 .pro-container > div > div > i {
 	position: absolute;
@@ -2364,6 +2376,7 @@ animation: infiniterotation 3s linear infinite;
     position: absolute;
     margin-top: -2px;
     margin-left: 10px;
+    font-size: 14px;
 }
 .pro-container > div > div > span > a {
 	padding-right: 0;
@@ -2376,11 +2389,11 @@ animation: infiniterotation 3s linear infinite;
     margin-left: 10px;
 }
 .pro-container > div > div > span:nth-of-type(2) {
-    padding-right: 75px;
+    padding-right: 78px;
     padding-left: 7px;
 }
 .pro-container > div > div > span:nth-of-type(3) {
-	padding-right: 43px;
+	padding-right: 53px;
     color: #444;
 }
 .pro-container > div > div > span:last-child:hover {
@@ -2414,7 +2427,7 @@ animation: infiniterotation 3s linear infinite;
 	padding-left: 17%;
 }
 .review-submit .pro-container > div > div > span:nth-of-type(2) {
-    padding-right: 27%;
+    padding-right: 29.5%;
     padding-left: 9%;
 }
 .review-submit .pro-container > div > div > p {
@@ -2424,9 +2437,10 @@ animation: infiniterotation 3s linear infinite;
     padding: 2px 13px;
     position: absolute;
     margin-top: -2px;
-    margin-left: 4%;
+    margin-left: 3%;
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
 }
 .form-review > h4 {
 	margin-bottom: 15px;
@@ -2607,6 +2621,7 @@ animation: infiniterotation 3s linear infinite;
     border: 1px solid #444;
     border-radius: 20px;
     margin-bottom: 3px;
+    font-size: 14px;
 }
 .pro-container > div > div > div > a > span:hover {
 	color: #f6442b;
@@ -2622,6 +2637,9 @@ animation: infiniterotation 3s linear infinite;
 .pro-container > div > div > div > span:hover {
 	color: #f6442b;
 	border: 1px solid #f6442b;
+}
+.orderWrap .review-product .pro-title > span:nth-of-type(3) {
+    padding-right: 7.5%;
 }
 .show {
 	display: bold;
@@ -2703,7 +2721,7 @@ animation: infiniterotation 3s linear infinite;
 	padding-left: 30px;
 }
 .invoice-product .pro-container > div > div > div > a > span {
-	width: 125px;
+	width: 111px;
 }
 .invoice-product .pro-container > div > div > div > a:nth-of-type(2) > span {
 	border: none;
@@ -2731,6 +2749,7 @@ animation: infiniterotation 3s linear infinite;
 	padding-top: 0;
 	color: #f9421e;
 	padding-left: 5px;
+	font-size: 14px;
 }
 .refundWrap .pro-container > div > div > li {
 	display: inline-block;
@@ -2738,17 +2757,23 @@ animation: infiniterotation 3s linear infinite;
 	margin-top: -10px;
 	text-align: center;
 }
+.refundWrap .pro-container > div > div > li > span {
+	font-size: 14px;
+}
 .refundWrap .pro-container > div > div > li > a > span {
 	color: #666;
+	font-size: 14px;
 }
 .refundWrap .pro-container > div > div > li > a > span:hover {
 	color: #f6442b;
 }
 .refundWrap .pro-container > div > div > li:nth-of-type(2) {
-	padding-left: 10px;
-	padding-left: 30px;
+	padding-left: 35px;
 }
 .refundWrap .pro-container > div > div {
 	padding-left: 25px;
+}
+.refundWrap .review-product .pro-title > span:nth-of-type(3) {
+    padding-right: 6.5%;
 }
 /**** 退款结束 ***/
